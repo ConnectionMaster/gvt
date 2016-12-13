@@ -13,7 +13,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/FiloSottile/gvt/fileutils"
+	"github.com/teslamotors/gvt/fileutils"
 )
 
 // ParseImports parses Go packages from a specific root returning a set of import paths.

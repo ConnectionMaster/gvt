@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"path/filepath"
 
-	"github.com/FiloSottile/gvt/fileutils"
-	"github.com/FiloSottile/gvt/gbvendor"
+	"github.com/teslamotors/gvt/fileutils"
+	"github.com/teslamotors/gvt/gbvendor"
 )
 
 var (
@@ -99,6 +99,7 @@ Flags:
 				Path:       d.Path,
 				NoTests:    d.NoTests,
 				AllFiles:   d.AllFiles,
+				Makefiles:  d.Makefiles,
 			}
 
 			if err := fileutils.RemoveAll(filepath.Join(vendorDir, filepath.FromSlash(d.Importpath))); err != nil {
